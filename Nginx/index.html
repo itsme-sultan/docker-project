@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sultan Ansari | DevOps Journey</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
+    }
+    .card {
+      width: min(760px, 100%);
+      padding: 48px;
+      border: 1px solid #26334d;
+      border-radius: 24px;
+      background: linear-gradient(145deg, #111827, #0f172a);
+      box-shadow: 0 24px 70px rgba(0,0,0,.35);
+    }
+    .tag {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: #172554;
+      color: #93c5fd;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin-top: 18px;
+      font-size: clamp(38px, 7vw, 64px);
+      line-height: 1;
+      letter-spacing: -0.04em;
+      color: #fff;
+    }
+    .intro {
+      margin-top: 18px;
+      max-width: 620px;
+      color: #aab6ca;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    .intro strong { color: #f8fafc; }
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 34px;
+    }
+    .topic {
+      padding: 20px 14px;
+      text-align: center;
+      border: 1px solid #26334d;
+      border-radius: 16px;
+      background: rgba(255,255,255,.035);
+      font-weight: 700;
+      transition: transform .2s ease, border-color .2s ease;
+    }
+    .topic:hover {
+      transform: translateY(-4px);
+      border-color: #60a5fa;
+    }
+    .icon { display: block; font-size: 25px; margin-bottom: 9px; }
+    footer {
+      margin-top: 34px;
+      padding-top: 22px;
+      border-top: 1px solid #26334d;
+      color: #71809a;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      .card { padding: 32px 24px; }
+      .topics { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <span class="tag">My DevOps Journey</span>
+
+    <h1>Sultan Ansari</h1>
+
+    <p class="intro">
+      Hi! I'm <strong>Sultan</strong>, currently learning <strong>DevOps</strong>
+      from <strong>TrainWithShubham</strong> and building my skills one concept at a time.
+    </p>
+
+    <section class="topics" aria-label="DevOps topics covered">
+      <div class="topic"><span class="icon">🐧</span>Linux</div>
+      <div class="topic"><span class="icon">💻</span>Bash Scripting</div>
+      <div class="topic"><span class="icon">🌿</span>Git & GitHub</div>
+      <div class="topic"><span class="icon">🐳</span>Docker</div>
+    </section>
+
+    <footer>
+      Learning. Practicing. Building. 🚀
+    </footer>
+  </main>
+</body>
+</html>
